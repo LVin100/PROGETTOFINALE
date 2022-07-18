@@ -29,10 +29,11 @@ Passiamo adesso al lato front-end, la cartella eCommerceApp/src/app qui ci sono 
 L'auth per la gestione del login, il cart per la gestione del carrello, un header globale, la funzionalità login, la pagina di cortesia "page-not-found", 
 la funzionalità registazione e la parte dedicata ai prodotti e agli utenti. 
 
+COME INSTALLARE CORRETTAMENTE L'APPLICAZIONE NEL PROPRIO AMBIENTE: 
 
 Adesso passiamo all'UTILIZZO E FUNZIONALITà DELL'APPLICAZIONE: 
 entrando da terminale nella cartella eCommerceApp e usando il comando "ng serve", sulla porta di default localhost:4200 verrà avviata l'applicazione e ci si troverà
-nella Dashboard, qui si possono vedere tutti i prodotti presenti nel database cleanocean, nella tabella Products. Cliccando su "Buy Now" si accede alla pagina
+nella Dashboard, qui si possono vedere tutti i prodotti presenti nel database cleanocean, nella tabella Products (Chiamata READ). Cliccando su "Buy Now" si accede alla pagina
 di dettaglio del prodotto: a sinistra una foto simbolica (presa da https://picsum.photos/ sito utilissimo per produrre immagini casuali che cambiano di volta in volta, 
 anche se questo aspetto con angular non avviene, in quanto si tratta di una Single Page Application). a destra si può leggere il nome del prodotto, una breve descrizione
 (un lorem in quanto non ancora presente nel database Products la colonna "breve descrizione", il costo, la quantità disponibile, un form select per determinare la
@@ -57,3 +58,10 @@ la quantità acquistata e il codice dell'utente che l'ha effettuato.
 ogni singolo ordine appare come ordine a sè stante. 
 
 in questa pagina possiamo comodamente cancellare gli ordini col tasto "Elimina Ordine" (Chiamata DELETE). 
+
+Clicchiamo su Log In e torniamo all'area personale, cliccando su Manage Products si possono visualizzare i prodotti creati (già presenti nel database, non è possibile crearne di nuovi) e modificarli. Nella sezione di modifica riceviamo in un form i valori del prodotto selezionato e possiamo modificarli a piacimento (chiamata UPDATE). 
+
+come ultimo, sempre nell'area personale c'è il tasto Log Out, che permette di disconnettersi dalla sessione. 
+
+Bene! questo è tutto!
+Grazie mille per il tempo dedicato e per aver testato la mia applicazione!
