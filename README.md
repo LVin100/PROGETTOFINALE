@@ -30,6 +30,10 @@ L'auth per la gestione del login, il cart per la gestione del carrello, un heade
 la funzionalità registazione e la parte dedicata ai prodotti e agli utenti. 
 
 COME INSTALLARE CORRETTAMENTE L'APPLICAZIONE NEL PROPRIO AMBIENTE: 
+scaricare la cartella zippata ed estrarla in Xampp/htdocs;
+col terminale accedere a eCommerceApp ed eseguire i seguenti comandi: 
+"npm insall"
+"npm install --save angular-emojis"
 
 Adesso passiamo all'UTILIZZO E FUNZIONALITà DELL'APPLICAZIONE: 
 entrando da terminale nella cartella eCommerceApp e usando il comando "ng serve", sulla porta di default localhost:4200 verrà avviata l'applicazione e ci si troverà
