@@ -6,6 +6,7 @@ La premessa è finita, iniziamo!
 
 ORIENTARSI NEI FOLDER:
 il progetto presenta la seguente struttura: 
+
   -app/
   
   -core/
