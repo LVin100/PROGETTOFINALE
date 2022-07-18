@@ -30,10 +30,18 @@ L'auth per la gestione del login, il cart per la gestione del carrello, un heade
 la funzionalità registazione e la parte dedicata ai prodotti e agli utenti. 
 
 COME INSTALLARE CORRETTAMENTE L'APPLICAZIONE NEL PROPRIO AMBIENTE: 
+Avviare il server locale Apache e MySQL, come nei miei altri progetti consiglio di utilizzare Xampp, 
+cliccare su "data import" e selezionare il file "migrations.sql";
+aggiornare il file .env con i propri dati (come precemente detto);
+//fine configurazione database
 scaricare la cartella zippata ed estrarla in Xampp/htdocs;
 col terminale accedere a eCommerceApp ed eseguire i seguenti comandi: 
 "npm insall"
-"npm install --save angular-emojis"
+"npm install --save angular-emojis --force"
+"ng serve"
+entrare nella porta indicata e si potrà accedere all'applicazione funzionante. 
+Se la landing-page appare vuota, probabilmente non è stato configurato correttamente il database o il file .env
+
 
 Adesso passiamo all'UTILIZZO E FUNZIONALITà DELL'APPLICAZIONE: 
 entrando da terminale nella cartella eCommerceApp e usando il comando "ng serve", sulla porta di default localhost:4200 verrà avviata l'applicazione e ci si troverà
