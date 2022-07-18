@@ -7,13 +7,21 @@ La premessa è finita, iniziamo!
 ORIENTARSI NEI FOLDER:
 il progetto presenta la seguente struttura: 
   -app/
+  
   -core/
+  
   -eCommerceApp/
+  
   .env
+  
   .htaccess
+  
   index.php
+  
   migrations.sql
+  
   routes.php
+  
 
 nelle cartelle app/ e core/ si trova il back-end in php. Nella prima ci sono i modelli models/(Prodotti, Ordini e Utenti) e la cartella Controllers che, come si può 
 intuire dal nome, contiene i Controller che gestiscono le varie chiamate.
