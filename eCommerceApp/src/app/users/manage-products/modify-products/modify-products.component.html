@@ -1,0 +1,20 @@
+<div class="d-flex flex-column align-items-center container">
+
+  <h1 class="my-5">Modify your Product!
+  </h1>
+  <form class="form-group" (ngSubmit)="submit()" [formGroup]="form">
+    <label for="name">Name</label>
+    <input type="text" formControlName="name" name="name" class="form-control">
+    <label for="quantity">Quantity</label>
+    <input type="number" formControlName="quantity" name="quantity" class="form-control"
+    >
+    <label for="kg">Kg</label>
+    <input type="text" formControlName="kg" name="kg" class="form-control" >
+    <label for="cost">Cost</label>
+    <input type="text" formControlName="cost" name="cost" class="form-control"
+    >
+    <button type="submit" class="btn btn-primary">
+      modify
+    </button>
+  </form>
+</div>

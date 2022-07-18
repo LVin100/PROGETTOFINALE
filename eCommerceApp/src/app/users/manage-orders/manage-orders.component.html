@@ -1,0 +1,21 @@
+<h1 class="text-center">Gestisci qui i tuoi ordini</h1>
+<ul class="list-group container mb-3 text-center">
+
+  <li class="d-flex fw-bold justify-content-around list-group-item">
+    <span class="col-2">Codice Ordine</span>
+    <span class="col-2">Codice prodotto acquistato</span>
+    <span class="col-2">Quantità acquistata</span>
+    <span class="col-2">elimina ordine</span>
+  </li>
+
+  <li class="d-flex justify-content-around list-group-item" *ngFor="let sale of this.manageOrdersService.sales">
+    <span class="col-2">{{sale.id_vendita}}</span>
+    <span class="col-2">{{sale.id_product}}</span>
+    <span class="col-2">{{sale.quantity}}</span>
+    <span class="col-2"><button class="btn btn-outline-danger "
+        (click)="this.manageOrdersService.deleteOrder(sale.id_vendita)">Elimina
+        Ordine</button></span>
+  </li>
+
+
+</ul>

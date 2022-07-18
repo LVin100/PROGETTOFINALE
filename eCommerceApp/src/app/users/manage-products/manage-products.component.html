@@ -1,0 +1,20 @@
+<h1 class="text-center m-5">Manage your products here</h1>
+<ul class="list-group container ">
+
+    <li class="d-flex fw-bold fs-4 justify-content-around list-group-item">
+      <span class="col-2">Name</span>
+      <span class="col-2">Quantity</span>
+      <span class="col-2">Price</span>
+      <span class="col-2">Weight</span>
+      <span class="col-2">Modify</span>
+    </li>
+    <li class="d-flex fw-normal justify-content-around list-group-item align-items-center" *ngFor="let product of this.manageProductsService.products">
+      <td class="col-2 fs-5 ">{{product.name}}</td>
+      <td class="col-2">{{product.quantity}}</td>
+      <td class="col-2">{{product.cost}}</td>
+      <td class="col-2">{{product.kg}}</td>
+      <td class="col-2"><a [routerLink]="['/modify', product.id]" class="btn-outline-dark btn"><angular-emojis [name]="'lower_left_ballpoint_pen'"></angular-emojis></a></td>
+    </li>
+
+
+</ul>

@@ -1,0 +1,12 @@
+<div class="container p-5">
+  <div class="row m-0 p-0 g-5 d-flex justify-content-around">
+
+    <div class="col-3 card border border-black m-2 p-2 bg-light bg-opacity-75"
+      *ngFor="let product of this.productService.products">
+      <p class="fs-4 fw-bold text-center">{{product.name}}</p>
+      <p>for only {{product.cost | currency}}!</p>
+      <p>available: {{product.quantity}} left</p>
+      <a class="btn btn-outline-primary fw-bold" [routerLink]="['/product', product.id]">Buy Now</a>
+    </div>
+  </div>
+</div>

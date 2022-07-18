@@ -1,0 +1,9 @@
+<h1 class="text-center">Welcome in your personal area</h1>
+
+<div class=" d-flex justify-content-around m-5 d-flex align-items-center">
+  <a class="btn btn-primary btn-lg w-25 fs-3 " [routerLink]="['/manage-orders']"
+    routerLinkActive="router-link-active ">Manage Orders</a>
+  <a class="btn btn-primary btn-lg w-25 fs-3" [routerLink]="['/manage-products']"
+    routerLinkActive="router-link-active">Manage Products</a>
+  <a class="btn btn-warning btn-lg w-25 fs-3" (click)="this.usersService.logout()">Log Out</a>
+</div>

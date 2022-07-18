@@ -1,0 +1,29 @@
+<div class="d-flex flex-column align-items-center container ">
+  <header class="bg-dark text-white  p-2 mt-5 mb-2 w-25 text-center ">
+    <h1 class="">Login</h1>
+  </header>
+
+
+  <form (ngSubmit)="submit()" [formGroup]="form">
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="text" formControlName="email" name="email" class="form-control" placeholder="Enter Email">
+
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" formControlName="password" name="password" class="form-control"
+        placeholder="Enter Password">
+
+
+    </div>
+
+    <button type="submit" class="btn btn-dark btn-sm mt-4">Login</button>
+    <button class="btn btn-dark btn-sm mt-4 mx-3" routerLink="/registration">Register</button>
+
+  </form>
+
+
+</div>

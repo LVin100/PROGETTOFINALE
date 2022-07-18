@@ -1,0 +1,17 @@
+<div class="text-center">
+  <h1 class="m-3">Your Cart</h1>
+  <ul class="list-group container mb-3">
+    <li class="d-flex fw-bold justify-content-around list-group-item">
+      <span class="col-1">Name</span>
+      <span class="col-1">Quantity</span>
+      <span class="col-1">Cost</span>
+    </li>
+    <li class="d-flex justify-content-around list-group-item" *ngFor="let product of products">
+      <span class="col-1">{{ product.name}}</span>
+      <span class="col-1"> x{{product.quantity}}</span>
+      <span class="col-1">{{ product.cost | currency}}</span>
+    </li>
+  </ul>
+  <button class="btn btn-success col-4 fs-3 w-25" (click)="this.cartService.createOrder()">Buy</button>
+
+</div>
